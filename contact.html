@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="main_menu">
+                <ul id="main_menu_list">
+                    <li class="main_menu_item" style="margin-left: 20px;"><a href="index.html">Αρχική</a></li>
+                    <li class="main_menu_item"><a href="categories.html">Κατηγορίες</a></li>
+                    <li class="main_menu_item"><a href="contact.html">Επικοινωνία</a></li>
+                    <li class="main_menu_item"><a href="about_us.html">Σχετικά με εμάς</a></li>
+                </ul>
+            </nav>
+            <h1 id="titlos" >ΑΣΗΜΕΝΙΑ ΕΥΚΑΙΡΙΑ</h1> 
+        </header>
+        <main>
+            <div id = contact_main_text>
+                <h2>Φόρμα Επικοινωνίας</h2>
+                <p>
+                Για να βρίσκεστε στη σελίδα επικοινωνίας, υποθέτουμε πως έχετε αντιμετωπίσει κάποιο πρόβλημα <br>
+                Παρακαλόυμε συμπληρώστε την παρακάτω φόρμα για τεχνική υποστήριξη. <br>
+                Για να υποβάλετε τις απαντήσεις σας, πατήστε το κουμπί Υποβολή.
+                </p>
+            </div>
+            <div class="form-container">
+                <fieldset>
+                  <legend id="contact-legend">Στοιχεία Επικοινωνίας</legend>
+            
+                  <label for="txt_email">Email</label>
+                  <input type="email" id="txt_email" name="email" placeholder="Συμπληρώστε το e-mail σας" autocomplete="email" list="user_emails">
+
+                    <datalist id="user_emails">
+                        <option>@gmail.com</option>
+                        <option>@yahoo.com</option>
+                        <option>@hotmail.com</option>
+                    </datalist>
+
+            
+                  <label for="txt_telephone">Αριθμός Τηλεφώνου</label>
+                  <input type="tel" id="txt_telephone" name="telephone" placeholder="Συμπληρώστε τον αριθμό τηλεφώνου σας" pattern="\d{10}" title="π.χ 6984236958" required>
+                </fieldset>
+            
+                <label for="txt_name">Ονοματεπώνυμο</label>
+                <input type="text" id="txt_name" name="name" placeholder="Συμπληρώστε το ονοματεπώνυμο σας">
+            
+                <label for="txt_code">Κωδικός Αγγελίας</label>
+                <input type="text" id="txt_code" name="code" placeholder="Συμπληρώστε το κωδικό αγγελίας που σας ενδιαφέρει">
+            
+                <label for="txt_description">Περιγραφή Προβλήματος</label>
+                <input type="text" id="txt_description" name="description" placeholder="Περιγράψτε μας το πρόβλημά σας">
+                
+                <button type="submit" id="button_submit" name="submit">Υποβολή</button>    
+              </div>
+        </main>
+        <footer>
+            <ul id="footer_items">
+                <li><b>Επικοινωνία</b>
+                    <p>Πατησίων 76<br>
+                        ΤΚ 104 34 Αθήνα</p>
+                </li>
+                <li>
+                    <b>Σχετικά με εμάς</b>
+                    <p>
+                    p3200032@aueb.gr<br>
+                    p3200077@aueb.gr</p>
+                </li>
+                <li>
+                    <b>Κοινωνικά δίκτυα</b><br>
+                    <a href="https://www.instagram.com/nick_konior">Instagram</a>
+                </li>
+              </ul>
+        </footer>
+    </body>
+    
+</html>

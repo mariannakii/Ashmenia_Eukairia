@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="main_menu">
+                <ul id="main_menu_list">
+                    <li class="main_menu_item" style="margin-left: 20px;"><a href="index.html">Αρχική</a></li>
+                    <li class="main_menu_item"><a href="categories.html">Κατηγορίες</a></li>
+                    <li class="main_menu_item"><a href="contact.html">Επικοινωνία</a></li>
+                    <li class="main_menu_item"><a href="about_us.html">Σχετικά με εμάς</a></li>
+                </ul>
+            </nav>
+            <h1 id="titlos" >ΑΣΗΜΕΝΙΑ ΕΥΚΑΙΡΙΑ</h1> 
+        </header>
+        <main>
+            <div id="register_main_text">
+                <h2>Εγγραφή χρήστη</h2>
+                <p>
+                Εγγραφείτε τώρα στην σελίδα μας, για να λαμβάνετε ενημρώσεις όσον αφορά τις καταχωρήσεις νέων αγγελιών, <br> 
+                νέων προσφορών, και προβολή προϊόντων σύμφωνα με τις προσωπικές σας προτιμήσεις. 
+                </p>
+            </div>
+            <div class="form">
+                <form name="gbForm" method="post" action="/register-user"></form>
+                <output id="errors"></output>
+                    <fieldset>
+                        <legend id="personal">Προσωπικά Στοιχεία Χρήστη</legend>
+
+                        <label for="txt_name">Ονοματεπώνυμο</label>
+                        <input type="text" id="txt_name" name="name" placeholder="Συμπληρώστε το ονοματεπώνυμο σας" size="50" required autofocus>
+                        
+                        <label for="txt_telephone">Αριθμός Τηλεφώνου</label>
+                        <input type="tel" id="txt_telephone" name="telephone" placeholder="Συμπληρώστε τον αριθμό τηλεφώνου σας" pattern="\d{10}" title="π.χ 6984236958" size="50" autofocus required>
+
+                        <label for="txt_email">Email</label>
+                        <input type="email" id="txt_email" name="email" placeholder="Συμπληρώστε το e-mail σας" autocomplete="email" list="user_emails" size="50" required autofocus>
+
+                        <datalist id="user_emails">
+                            <option>@gmail.com</option>
+                            <option>@yahoo.com</option>
+                            <option>@hotmail.com</option>
+                        </datalist>
+
+                        <label for="txt_adress">Διεύθυνση Κατοικίας</label>
+                        <input type="text" id="txt_adress" name="adress" placeholder="Συμπληρώστε την διεθυνσή σας" size="50" required autofocus> 
+                    </fieldset>
+
+                    <fieldset>
+                        <legend id="identification">Ταυτοποίηση Χρήστη</legend>
+
+                        <label for="txt_username">Username:</label>
+                        <input type="text" id="txt_username" name="username" placeholder="Συμπληρώστε το username που επιθυμείτε" size="50" required autofocus>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Συμπληρώστε το password που επιθυμείτε" required>
+
+                        <label for="confirm_password">Επιβεβαίωση Κωδικού:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Συμπληρώστε τον ίδιο κωδικό" required>
+                    </fieldset>
+
+                    
+                    <fieldset>
+                        
+                        <span class="question">Επιλέξτε τρόπο επικοινωνίας, για την αποστολή ενημερώσεων </span><br>
+
+                        <label for="sms">SMS</label>
+                        <input type="checkbox" id="sms" name="SMS" value="sms">
+                        
+                        <label for="email_comm">Email</label>
+                        <input type="checkbox" id="email_comm" name="EMAIL" value="email">
+
+                        <label for="viber">Viber</label>
+                        <input type="checkbox" id="viber" name="VIBER" value="viber">
+
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="checkbox" id="whatsapp" name="WHATSAPP" value="whatsapp">
+                    </fieldset>
+
+
+                    <div id="buttons">
+                        <input type="submit" id="btn_submit" value="Submit"> 
+                        <input type="reset" id="btn_reset" value="Erase and Start Over"> 
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <ul id="footer_items">
+                <li><b>Επικοινωνία</b>
+                    <p>Πατησίων 76<br>
+                        ΤΚ 104 34 Αθήνα</p>
+                </li>
+                <li>
+                    <b>Σχετικά με εμάς</b>
+                    <p>
+                    p3200032@aueb.gr<br>
+                    p3200077@aueb.gr</p>
+                </li>
+                <li>
+                    <b>Κοινωνικά δίκτυα</b><br>
+                    <a href="https://www.instagram.com/nick_konior">Instagram</a>
+                </li>
+              </ul>
+        </footer>
+    </body>
+    
+</html>
+

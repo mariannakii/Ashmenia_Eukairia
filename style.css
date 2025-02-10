@@ -1,0 +1,603 @@
+body{
+    margin: 0;
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(232,230,250);
+}
+main{
+    min-height: 720px;
+}
+footer{
+    background-color: rgb(65, 65, 68);
+    margin-bottom: -20px;
+    margin-top: 5em;
+    color: aliceblue;
+    text-align: center;
+    clear: both;
+}
+footer a img{
+    height: 1.5em;
+}
+footer a{
+    margin: 0.2em;
+}
+#footer_items li{
+    padding: 3em;
+    display: inline-block;
+}
+
+/* Fonts */
+@font-face {
+    font-family: FireSans;
+    src: url(fonts/FiraSansCondensed-BlackItalic.ttf);
+}
+@font-face {
+    font-family: FireSansRegular;
+    src: url(fonts/FiraSansCondensed-Medium.ttf);
+}
+@font-face{
+    font-family: Ezcar_Regular;
+    src: url(fonts/Eczar-Regular.ttf);
+}
+@font-face{
+    font-family: Ezcar_SemiBold;
+    src: url(fonts/Eczar-SemiBold.ttf);
+}
+
+/*  Navigation bar CSS  */
+nav{
+    display: block;
+    background: linear-gradient(.25turn, silver, 50%, rgb(237, 240, 241));
+}
+nav ul{
+    display: inline-block;
+    margin: 0;
+}
+#main_menu_list{
+    list-style-type: none;
+    padding: 15px;
+    overflow: hidden;
+    height: auto;
+}
+.main_menu_item{
+    display: inline;
+    font-family: FireSans;
+}
+.main_menu_item a {
+    text-align: center;
+    padding: 16px 13px;
+    text-decoration: none;
+    color: rgb(42, 59, 131);
+    border-radius: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+.main_menu_item a:hover{
+    color: rgb(56, 145, 247);
+    transition: color 0.5s; /* Smooth hover effect */
+}
+
+/*  Title Css   */
+#titlos{
+    font-family: FireSans;
+    font-size: 58px;
+    text-align:center;
+    text-shadow: 3px 3px 1px rgb(56, 145, 247);
+    background-image: linear-gradient(to right, #000000, silver);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    user-select: none;
+}
+
+/*index page css */
+.index_div_box{
+    text-align: center;
+}
+.index_main_text{
+    margin-top: 5em;
+    font-size: larger;
+    font-family: Ezcar_Regular;
+} 
+.index_div_box button{
+    display: inline-block;
+    margin-top: 5em;
+    padding: 17px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: FireSans;
+    font-size: 18px;
+}
+    
+.index_div_box button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* categories.html css */
+#categories_main_text{
+    text-align: center;
+    font-family: FireSans;
+    font-size: 20px;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+#categories_list{
+    text-align: center;
+    transition: transform 0.3s;
+}
+.categories_list_item {
+    text-align: center;
+    display: inline-block;
+    margin: 4em;
+    padding: 2em;
+    transition: transform 0.3s;
+    border: medium solid transparent;
+}
+.categories_list_item a{
+    padding: 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+.categories_list_item:hover{
+    background-color: rgb(202, 216, 245);
+    transition: background-color 1s linear;
+    border: medium solid rgb(42, 59, 131);
+    transform: scale(1.1);
+}
+.category-image {
+    display: block;
+}
+.categories_img {
+    height: 3.2em;
+}
+.category-name {
+    font-family: FireSansRegular;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* categories list submenu css */
+.categories_list_subnav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: white; /* Background color of the submenu */
+    position: absolute;
+    z-index: 1; /* Ensure the submenu appears above other content */
+}
+.categories_list_item:hover .categories_list_subnav {
+    display: block;
+    border: medium solid rgb(42, 59, 131);
+    width: 12em;
+}
+.categories_list_subnav li {
+    padding: 0.5em;
+}
+
+.categories_list_subnav a {
+    display: block;
+    font-family: FireSansRegular;
+    text-decoration: none;
+    padding: 5px 10px; /* Spacing for submenu items */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/*categories title css */
+#categories_title{
+    font-family: FireSans;
+    font-size: 32px;
+    color: rgb(42, 59, 131);
+    margin: 3em;
+    margin-bottom: 0;
+}
+
+                                                                                                /*home rentals css*/
+
+/* home rentals menu css */
+.hr_type_list{
+    text-align: center;
+}
+.hr_type_list_item{
+    display: inline-block;
+    margin: 4em;
+    border: medium black;
+}
+
+.hr_type_list_item a{
+    margin: 2em;
+    text-decoration: none;
+}
+
+/* home rentals content css */
+/* Create a keyframes animation for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the .content_div_box */
+.content_div_box {
+    display: none;
+    float: left;
+    animation: fadeIn 1.5s ease-out;
+    opacity: 1;
+    height: fit-content;
+}
+
+.content_div_box:target {
+    display: block;
+}
+
+.property-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 2.7em;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    text-decoration: none;
+}
+.property-card img{
+    height: 13em;
+    width: 100%; /* Make sure the image takes the full width of its container */
+}
+
+.property-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Blue shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Property_1.html css */
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+  }
+
+  /* Style for the slider container */
+  .slider-container {
+    overflow: hidden;
+    margin: 4em;
+    border: 0.5rem solid lightgray;
+  }
+
+  /* Style for the slides */
+  .slide {
+    display: none;
+    margin: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .slide img{
+    width: 40em;
+    border: medium solid rgb(179, 179, 179);
+  }
+  /* Show the checked slide */
+  input:checked + .slide {
+    display: block;
+  }
+
+  /* Style for navigation labels */
+  .slider-nav {
+    margin-left: 17em;
+    margin-bottom: 1.5em;
+  }
+
+  .slider-nav label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 0px 2px;
+    cursor: pointer;
+  }
+
+  /* Highlight the active label */
+  input:checked + .slide-label {
+    background-color: #555;
+  }
+
+  /* Property 1 main text */
+  .p1_main_text{
+    float: right;
+    margin: 2em;
+    margin-right: 5em;
+    text-align: center;
+  }
+  .p1_main_text_title{
+    font-family: FireSans;
+    font-size: 24px;
+  }
+  .p1_main_text_price{
+    font-family: FireSansRegular;
+    font-size: 18px;
+    margin-top: 2em;
+  }
+  .p1_main_text_contact{
+    font-family: FireSansRegular;
+    font-size: 18px;
+    margin-top: 10em;
+  }
+  .p1_main_text_contact h5{
+    padding: 0.1em;
+  }
+
+/* Style for the slider container */
+.details_container {
+    overflow: hidden;
+    margin: 4em;
+    border: 0.5rem solid lightgray;
+}
+
+.details_table{
+    margin: 2em;
+    font-family: FireSansRegular;
+    font-size: 18px;
+}
+.details_table_row :nth-child(2){
+    padding-left: 18em;
+}
+.details_table_cell{
+    padding: 1em;
+}
+
+
+/*   *****************   about us css   *************** */
+
+.about_us_div_box{
+    text-align: center;
+}
+
+#about_us_main_text{
+    text-align: center;
+    margin-top: 5em;
+    font-size: larger;
+    font-family: Ezcar_Regular;
+}
+
+#about_us_list{
+    text-align: center;
+    transition: transform 0.3s;
+}
+.about_us_list_item {
+    text-align: center;
+    display: inline-block;
+    margin: 4em;
+    padding: 2em;
+    transition: transform 0.3s;
+    border: medium solid transparent;
+}
+
+.avatar_image {
+    display: block;
+}
+.avatar_img {
+    height: 4.5em;
+}
+.avatar_name {
+    font-family: FireSansRegular;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.about_us_list_item:hover{
+    background-color: rgb(202, 216, 245);
+    transition: background-color 1s linear;
+    border: medium solid rgb(42, 59, 131);
+    transform: scale(1.1);
+}
+
+.about_us_list_item:hover .about_us_list_subnav {
+    display: block;
+    border: medium solid rgb(42, 59, 131);
+    width: 12em;
+}
+.about_us_subnav li {
+    padding: 0.5em;
+}
+
+.about_us_subnav  {
+    display: block;
+    font-family: FireSansRegular;
+    text-decoration: none;
+    padding: 5px 10px; /* Spacing for submenu items */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background-color: rgb(202, 216, 245);
+    transition: background-color 1s linear;
+    border: medium solid rgb(42, 59, 131);
+    transform: scale(1.1);
+    }
+
+    
+
+.submenu-content:target {
+    display: block;
+}
+
+.about_us_subnav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about_us_subnav li {
+    margin-bottom: 10px;
+}
+
+.about_us_subnav li a {
+    text-decoration: none;
+    color:blueviolet
+}
+
+.about_us_subnav li a:hover {
+    color: #007bff;
+}
+
+
+
+
+/* *********** contact css ************ */
+
+.form-container{
+    margin-top: 3em;
+    text-align: center;
+    font-family: FireSansRegular;
+    font-size: 20px;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#titlos_contact{
+    margin-top: 3em;
+    font-family: Ezcar_Regular;
+    font-size: 30px;
+    text-align:center;
+}
+
+#contact_main_text{
+    text-align:center;
+    margin-top: 2em;
+    font-family: Ezcar_Regular;
+    font-size: larger;
+}
+
+#contact-box{
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 40px;
+}
+
+
+input{
+    width:600px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: grid;
+    border: 1px solid #0056b3;
+}
+
+
+#button_submit{
+    display: inline-block;
+    margin-top: 5em;
+    padding: 17px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: FireSans;
+    font-size: 14px;
+}
+
+ #button_submit:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#txt_description{
+    height: 200px;
+}
+
+
+
+
+/* ******* registration css ********** */
+#register_main_text{
+    text-align:center;
+    margin-top: 2em;
+    font-family: Ezcar_Regular;
+    font-size: larger;
+}
+
+#btn_submit{
+    display: inline-block;
+    margin-top: 5em;
+    padding: 17px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: FireSans;
+    font-size: 14px;
+}
+
+#btn_submit:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#btn_reset{
+    display: inline-block;
+    margin-top: 3em;
+    padding: 17px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: FireSans;
+    font-size: 14px;
+}
+
+#btn_reset:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.form{
+    margin-top: 2em;
+    text-align: center;
+    font-family: FireSansRegular;
+    font-size: 18px;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
